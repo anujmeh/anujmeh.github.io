@@ -44,7 +44,7 @@
     <div class="container d-none d-lg-block">
       <div class="row">
         <div class="col-12 text-center mb-4 mt-5">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Behold<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Glimpse<span class="text-primary">.</span> </a></h1>
           </div>
       </div>
     </div>
@@ -96,7 +96,19 @@
               <div class="col-lg-4 mr-auto">
                 <h1>Thanks for joining!</h1>
                 <p class="mb-5">We'll let you know when our service is live! We can't wait to start boosting your ratings with the hottest new consumer products.</p>
-                <div>
+                
+                  <button onclick="copyToClipboard('#p1')" class="btn btn-primary mr-2 mb-2">Share With Friends</button>
+             <script>
+                   function copyToClipboard(element) {
+                   var $temp = $("<input>");
+                   $("body").append($temp);
+                   $temp.val($(element).text()).select();
+                   document.execCommand("copy");
+                   alert("Copied tryglimpse.com");
+                   $temp.remove();
+                   }
+               </script>
+                <div  style="padding-left: 50px">
                  
 
     <!--
@@ -293,7 +305,7 @@
           <div class="col-md-12">
             <p class="mb-0">
                Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              <a href="https://trybehold.space" target="_blank" >Back to Home</a>
+              <a href="https://tryglimpse.com" target="_blank">Back to Home</a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
