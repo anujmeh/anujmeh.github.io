@@ -1,4 +1,6 @@
 /* Base */
+
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -589,10 +591,10 @@ h1, h2, h3, h4, h5,
     width: 100%; }
   /* .site-blocks-cover, .site-blocks-cover > .container > .row {
     min-height: 600px;
-    height: calc(100vh); } */
+    height: calc(100vh); }
   .site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover > .container > .row {
     min-height: 400px;
-    height: calc(20vh); }
+    height: calc(20vh); } */
   .site-blocks-cover h1 {
     font-size: 3.5rem;
     font-weight: 400;

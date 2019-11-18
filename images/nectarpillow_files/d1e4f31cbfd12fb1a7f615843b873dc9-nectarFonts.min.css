@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'ProgrammeRegular';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/Programme-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ProgrammeBold';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/ProgrammeBold-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ProgrammeLight';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/ProgrammeLight-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Biotif-Light';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/biotif/biotif-light.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Biotif-Regular';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/biotif/biotif.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Biotif-Medium';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/biotif/biotif-medium.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Biotif-Bold';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/biotif/biotif-bold.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/poppins/poppins-light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/poppins/poppins-regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/poppins/poppins-medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/poppins/poppins-semibold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/poppins/poppins-bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/poppins/poppins-extrabold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    font-display: swap;
+    src: url('https://media.nectarsleep.com/fonts/poppins/poppins-black.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 900;
+}
