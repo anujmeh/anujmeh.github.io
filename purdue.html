@@ -165,18 +165,18 @@ mixpanel.init("f2e16a85c2662661be797c307fdf7684");</script><!-- end Mixpanel -->
 
 
                 </ul>
-                <div class="card-body">
+                <div id="links" class="card-body">
                   <!-- <a onClick="gtag('event','click',{'event_category':'learnbutton','event_label':'learnclick1'});" href="https://www.nectarsleep.com/mattress" class="card-link">More Info</a> -->
                   <a onClick="gtag('event','click',{'event_category':'buybutton','event_label':'buyclick1'});" href="https://playdicey.com/products/dicey" class="card-link">Shop Now</a>
-                  <script type="text/javascript">
-                    mixpanel.track_links("#card-link a", "buybutton", {
-                        "referrer": document.referrer
-                    });
-                </script>
                   <br><br>
                   <a onClick="gtag('event','click',{'event_category':'cashback','event_label':'cashbackbutton1'});" href="form2.html" class="card-link">Get an exclusive discount code from Glimpse</a>
                 </div>  
               </div>
+              <script type="text/javascript">
+                mixpanel.track_links("#links a", "click links for products", {
+                    "referrer": document.referrer
+                });
+            </script>
               <!-- <br><br><br>
               <div class="card" >
                   <img class="card-img-top" src="images/nectarpillow.jpg" alt="Card image cap">
