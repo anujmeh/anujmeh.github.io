@@ -15,7 +15,7 @@ body {font-size:16px;}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar custom-color w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">X Close</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="color:white; width:100%;font-size:22px">X Close</a>
   <div class="w3-container">
     <h4 style="color: white;" class="w3-padding-64"><b>Your Airbnb<br> Welcome Guide</b></h4>
   </div>
@@ -26,14 +26,14 @@ body {font-size:16px;}
     <a style="color: white;" href="#products" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Unique Products</a> 
     <a style="color: white;" href="#recommendations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Host Recommendations</a> 
     <a style="color: white;" href="#rules" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Rules</a> 
-    <a style="color: white;"  href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Me</a>
+    <a style="color: white;"  href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large custom-color w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button custom-color w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Danny's Welcome Guide</span>
+  <a href="javascript:void(0)" style="color: white;" class="w3-button custom-color w3-margin-right" onclick="w3_open()">☰</a>
+  <span style="color: white;">Your Welcome Guide</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -43,19 +43,28 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="welcome">
+  <div class="w3-container w3-center" style="margin-top:80px" id="welcome">
     <h1 class="w3-jumbo"><b>Welcome To Danny's Listing!</b></h1>
-    <h1 class="w3-xxxlarge custom-color-text"><b>Useful Information For Your Stay.</b></h1>
-    <hr style="width:50px;border:5px solid; color: #00d2b5;" class="w3-round">
+    <h1 class="w3-xxlarge custom-color-text"><b>Useful Information For Your Stay.</b></h1>
+    <hr style="border:5px solid; color: #00d2b5;" class="w3-round">
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
-        <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-        <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <ul class="w3-ul w3-center">
+            <h5>Here is the most important information for your stay: </h5>
+            <b><u>Wifi Information</u></b><br>
+            <li>Username: TEST <br>Password: TEST</li>
+            <b><u>Checkin and Checkout Information</u></b><br>
+            <li>Checkin: After 3PM<br>Checkout: 11AM</li>
+            <b><u>Things To Know</u></b><br>
+            <li>Danny has provided ear plugs for your convenience</li>
+            <li>Free parking is available.</li>
+            <li>You'll get to enjoy amenities such as the pool, spa and free coffee.</li>
+            <li>Bus stop is right by the Bamboo Hotel, Uber, Lyft or rent a car.</li>
+        </ul>
+
+
     <div class="w3-half">
       <img src="/images/DannyGongImage1.jpg" style="width:100%" onclick="onClick(this)" alt="Listing Image">
       <img src="/images/DannyGongImage2.jpg" style="width:100%" onclick="onClick(this)" alt="Listing Image">
@@ -79,16 +88,16 @@ body {font-size:16px;}
   </div>
 
   <!-- products -->
-  <div class="w3-container" id="products" style="margin-top:75px">
-    <h1 class="w3-xxxlarge custom-color-text"><b>Learn About Unique Products Around You.</b></h1>
-    <hr style="width:50px;border:5px solid #00d2b5" class="w3-round">
+  <div class="w3-container w3-center" id="products" style="margin-top:75px">
+    <h1 class="w3-xxlarge custom-color-text"><b>Learn About Unique Products Around You.</b></h1>
+    <hr style="border:5px solid #00d2b5" class="w3-round">
     <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
     <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
       <!-- The Team -->
-    <div class="w3-row-padding">
+    <div class="w3-row-padding w3-center">
         <div class="w3-col m4 w3-margin-bottom">
         <div class="w3-light-grey">
             
@@ -125,9 +134,9 @@ body {font-size:16px;}
     </div>
   
   <!-- recommendations -->
-  <div class="w3-container" id="recommendations" style="margin-top:75px">
-    <h1 class="w3-xxxlarge custom-color-text"><b>Local Recommendations.</b></h1>
-    <hr style="width:50px;border:5px solid #00d2b5" class="w3-round">
+  <div class="w3-container w3-center" id="recommendations" style="margin-top:75px">
+    <h1 class="w3-xxlarge custom-color-text"><b>Recommended Things To See From Danny.</b></h1>
+    <hr style="border:5px solid #00d2b5" class="w3-round">
     <!-- <p>The best team in the world.</p>
     <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -329,10 +338,10 @@ body {font-size:16px;}
   </div> -->
 
   <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="rules" style="margin-top:75px">
-    <h1 class="w3-xxxlarge custom-color-text"><b>Rules During Your Stay.</b></h1>
-    <hr style="width:50px;border:5px solid #00d2b5" class="w3-round">
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  <div class="w3-container w3-center" id="rules" style="margin-top:75px">
+    <h1 class="w3-xxlarge custom-color-text"><b>Rules During Your Stay.</b></h1>
+    <hr style="border:5px solid #00d2b5" class="w3-round">
+    <p>To have the best stay and enjoy our time in Hawaii, please abide by the following rules. </p>
   </div>
 
   <div class="w3-row-padding">
@@ -353,30 +362,30 @@ body {font-size:16px;}
         </li>
       </ul>
     </div> -->
-    <div class="w3-half">
+    <!-- <div class="w3-half"> -->
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class="custom-color w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">50 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
-        <li class="w3-padding-16">
+        <li class="custom-color w3-xlarge w3-padding-32">Rules</li>
+        <li class="w3-padding-16">1) No pets, parties/events, or smoking. </li>
+        <li class="w3-padding-16">2) Garbage area is located in the basement.</li>
+        <li class="w3-padding-16">3) Security Deposit - if you damage the home, you may be charged up to $100</li>
+        <li class="w3-padding-16">4) There is a $250 deposit for the parking pass (please don't lose or forget to return the parking pass).</li>
+        <li class="w3-padding-16">5) Wash your clothes & towels at one of the coin operated washers & dryers located on the 4th, 8th & 12th floor.</li>
+        <!-- <li class="w3-padding-16">
           <h2>$ 249</h2>
           <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
+        </li> -->
+        <!-- <li class="w3-light-grey w3-padding-24">
           <button class="w3-button custom-color w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
+        </li> -->
       </ul>
-    </div>
+    <!-- </div> -->
   </div>
   
   <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge custom-color-text"><b>Contact Information During Your Stay.</b></h1>
-    <hr style="width:50px;border:5px solid #00d2b5" class="w3-round">
-    <p>I want to make sure you have the best possible stay. Please reach out to me if you have any questions.</p>
+  <div class="w3-container w3-center" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxlarge custom-color-text"><b>Contact Information During Your Stay.</b></h1>
+    <hr style="border:5px solid #00d2b5" class="w3-round">
+    <p>Danny wants to make sure you have the best possible stay. Please reach out to Danny via the <a href="https://www.airbnb.com/mobile">Airbnb app</a> or text message at 808-799-8249 if you have any questions.</p>
     <!-- <form action="/action_page.php" target="_blank">
       <div class="w3-section">
         <label>Name</label>
@@ -398,7 +407,7 @@ body {font-size:16px;}
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://tryglimpse.com" title="Glimpse" target="_blank" class="w3-hover-opacity">Glimpse</a>. All rights reserved by Dime Campus, Inc.</p></div>
+<div class="w3-container w3-padding-32" style="margin-top:75px;"><p class="w3-center">Powered by <a href="https://tryglimpse.com" title="Glimpse" target="_blank" class="w3-hover-opacity">Glimpse</a>. All rights reserved by Dime Campus, Inc.</p></div>
 
 <script>
 // Script to open and close sidebar
