@@ -107,8 +107,8 @@ body {font-size:16px;}
             <p>You spend a third of your life in bed. Nectar makes that time more comfortable, restful, and even a touch bouncier than other memory foam mattresses, so you can sleep in more often.</p>
                 <ul class="w3-ul w3-light-grey">
                         <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button custom-color w3-hover-black"><a style="text-decoration:none; color:white;" onClick="gtag('event','click',{'event_category':'learnbutton','event_label':'learnclick1'});" href="https://www.nectarsleep.com/mattress" >Learn More</a></button>
-                                <button class="w3-button custom-color w3-hover-black"><a style="text-decoration:none; color:white;" onClick="gtag('event','click',{'event_category':'buybutton','event_label':'buyclick1'});" href="https://www.nectarsleep.com/checkout/shipping" >Buy Now</a></button>
+                                <button class="w3-button custom-color w3-hover-black"><div id="learnbutton1"><a style="text-decoration:none; color:white;" onClick="gtag('event','click',{'event_category':'learnbutton','event_label':'learnclick1'});" href="https://www.nectarsleep.com/mattress" >Learn More</a></div></button>
+                                <button class="w3-button custom-color w3-hover-black"><div id="buybutton1"><a style="text-decoration:none; color:white;" onClick="gtag('event','click',{'event_category':'buybutton','event_label':'buyclick1'});" href="https://www.nectarsleep.com/checkout/shipping" >Buy Now</a></div></button>
                         </li>
                 </ul>
             </div>
@@ -123,8 +123,8 @@ body {font-size:16px;}
             <p>Pillow-in-pillow design with quilted memory foam outer shell, plus Tencel cooling fabric and active ventilation so you are always sleeping on the cool side.</p>
             <ul class="w3-ul w3-light-grey w3-center">
                 <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button custom-color w3-hover-black"><a style="text-decoration:none; color:white;" onClick="gtag('event','click',{'event_category':'learnbutton','event_label':'learnclick2'});" href="https://www.nectarsleep.com/pillows" >Learn More</a></button>
-                        <button class="w3-button custom-color w3-hover-black"><a style="text-decoration:none; color:white;" onClick="gtag('event','click',{'event_category':'buybutton','event_label':'buyclick2'});" href="https://www.nectarsleep.com/checkout/shipping" class="card-link">Buy Now</a></button>
+                        <button class="w3-button custom-color w3-hover-black"><div id="learnbutton2"><a style="text-decoration:none; color:white;" onClick="gtag('event','click',{'event_category':'learnbutton','event_label':'learnclick2'});" href="https://www.nectarsleep.com/pillows" >Learn More</a></div></button>
+                        <button class="w3-button custom-color w3-hover-black"><div id="buybutton2"><a style="text-decoration:none; color:white;" onClick="gtag('event','click',{'event_category':'buybutton','event_label':'buyclick2'});" href="https://www.nectarsleep.com/checkout/shipping" class="card-link">Buy Now</a></div></button>
                 </li>
             </ul>
             </div>
@@ -134,8 +134,30 @@ body {font-size:16px;}
 
     </div>
     <br><br>
-    <button class="w3-button custom-color w3-hover-black w3-padding-16"><a style="text-decoration:none; color:white;" href="https://airtable.com/shr6UY3nzdD9tCc8T">Leave a Review For The Products!</a></button>
-
+    <button class="w3-button custom-color w3-hover-black w3-padding-16"><div id="reviewbutton"><a style="text-decoration:none; color:white;" href="https://airtable.com/shr6UY3nzdD9tCc8T">Leave a Review For The Products!</a></div></button>
+    <script type="text/javascript">
+      mixpanel.track_links("#learnbutton1 a", "clicking button to go to product page for nectar mattress", {
+          "referrer": document.referrer
+      });
+      mixpanel.track_links("#buybutton1 a", "clicking button to go to checkout page for nectar mattress", {
+          "referrer": document.referrer
+      });
+      mixpanel.track_links("#discountbutton1 a", "clicking button to get discount code for nectar mattress", {
+          "referrer": document.referrer
+      });
+      mixpanel.track_links("#learnbutton2 a", "clicking button to go to product page for nectar pillows", {
+          "referrer": document.referrer
+      });
+      mixpanel.track_links("#buybutton2 a", "clicking button to go to checkout page for nectar pillows", {
+          "referrer": document.referrer
+      });
+      mixpanel.track_links("#discountbutton2 a", "clicking button to get discount code for nectar pillows", {
+          "referrer": document.referrer
+      });
+      mixpanel.track_links("#reviewbutton a", "clicking button to leave a review", {
+          "referrer": document.referrer
+      });
+  </script>
   <!-- recommendations -->
   <div class="w3-container w3-center" id="recommendations" style="margin-top:75px">
     <h1 class="w3-xxlarge custom-color-text"><b>My suggestions for things to see.</b></h1>
