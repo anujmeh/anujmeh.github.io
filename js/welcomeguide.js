@@ -1,0 +1,72 @@
+
+$(document).ready(() => {
+    let data = [];
+    const upcomingEvents = $("#upcoming-events");
+    const pastEvents = $("#past-events");
+    const resultsContainer = $(".results-container")[0];
+
+
+    const startAirtable = () => {
+        fetch('https://api.airtable.com/v0/appQnZfz4DcnoNdIx/', {
+          method: "GET",
+          headers: {
+            Authorization: "Bearer keywgnRcsbspP22cH"
+          }
+        })
+        .then(res => res.json())
+        .then(res => {
+          if(res) {
+            data = res.records.map(record => record.fields)
+          }
+    
+          let itemCount = 0;
+    
+          data.forEach(event => {       
+            if(event.Name === null || event.Name === undefined) return;
+    
+            if(event.Completed) {
+              pastEvents.prepend(buildEvent(event));
+            } else {
+              upcomingEvents.prepend(buildEvent(event));
+            }
+    
+            itemCount++;
+          });
+    
+          if(itemCount === 0) {
+            resultsContainer.innerHTML = `<div class="col-md-12"><p class="empty-state">Our organizers are working hard to create some awesome events! Join our mailing list for updates!</p></div>`;
+          }
+        });
+      }
+
+      // Build user HTML
+  const buildEvent = (eventData) => {
+    // let date = new Date(eventData.Date);
+
+    // const month = date.toLocaleString('en-us', { month: 'short' }).toUpperCase();
+    // const day = date.getDate();
+    // const datetime = date.toLocaleString('en-us', { year: 'numeric', month: 'long', day: 'numeric'}) + ", " + date.toLocaleTimeString('en-US').replace(/(.*)\D\d+/, '$1');;
+   
+    return `
+      <div class="col-md-4">
+        <div class="card event-card">
+          <div class="card-body">
+            <div class="card-text big-date">
+              <p class="month">${month}</p>
+              <p class="day">${day}</p>
+            </div>
+            <h5 class="card-title">${eventData.Name}</h5>
+            <p class="card-text date">${datetime}</p>
+            <p class="card-text location"><a href="https://maps.google.com/?q=${eventData.Location}">${eventData.Location}</a></p>
+          </div>
+          <div class="card-footer">
+            <a href="${eventData.Link}" class="card-link text-center"><i class="fas fa-external-link-square-alt"></i> &nbsp;More Information</a>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  startAirtable();
+});
+    
